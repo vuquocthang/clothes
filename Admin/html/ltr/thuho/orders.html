@@ -8,7 +8,7 @@
     <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
     <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
     <meta name="author" content="PIXINVENT">
-    <title>Admin | Orders</title>
+    <title>Thu Hộ | Tìm Đơn Hàng</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700" rel="stylesheet">
@@ -19,7 +19,6 @@
     <!-- END VENDOR CSS-->
     <!-- BEGIN MODERN CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/app.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/meteocons/style.css">
     <!-- END MODERN CSS-->
     <!-- BEGIN Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu-modern.css">
@@ -364,52 +363,73 @@
                 <li class=" nav-item">
                     <a href="orders.html">
                         <i class="la la-newspaper-o"></i>
-                        <span class="menu-title" data-i18n="nav.dash.main">Orders</span>
+                        <span class="menu-title" data-i18n="nav.dash.main">Thu Hộ</span>
                     </a>
                 </li>
-
-                <li class=" nav-item">
-
-                    <a href="accounts.html">
-                        <i class="la me-lines"></i>
-                        <span class="menu-title" data-i18n="nav.dash.main">Tài Khoản</span>
-                    </a>
-                </li>
-
-                <li class=" nav-item">
-                    <a href="settings.html">
-                        <i class="la ft-settings"></i>
-                        <span class="menu-title" data-i18n="nav.dash.main">Cài Đặt</span>
-                    </a>
-                </li>
-
             </ul>
         </div>
     </div>
 
     <div class="app-content content">
         <div class="content-wrapper">
-			<div class="content-header row">
-        <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
-          <h3 class="content-header-title mb-0 d-inline-block">Orders</h3>
-          <div class="row breadcrumbs-top d-inline-block">
-            <div class="breadcrumb-wrapper col-12">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a>
-                </li>
-                
-                <li class="breadcrumb-item active">Orders
-                </li>
-              </ol>
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Thu Hộ</h3>
+                    <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                </li>
+
+                                <li class="breadcrumb-item active">Tìm Đơn Hàng
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-        </div>
-        
-      </div>
 
             <div class="content-body">
                 <!-- Zero configuration table -->
                 <section id="configuration">
+                    <div class="row match-height">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" id="basic-layout-tooltip">Tìm Đơn Hàng</h4>
+                                    <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <form class="form">
+                                            <div class="form-body">
+                                                <div class="form-group">
+                                                    <label for="issueinput1">Order ID hoặc Email</label>
+                                                    <input type="text" id="issueinput1" class="form-control" name="issuetitle" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Issue Title" data-original-title="" title="">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-actions">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="la la-check-square-o"></i> Tìm Kiếm
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
@@ -423,6 +443,7 @@
                                                     <th>#Order ID</th>
                                                     <th>Ngày</th>
                                                     <th>Thông Tin</th>
+													<th>Tổng</th>
                                                     <th>Trạng Thái</th>
 
                                                 </tr>
@@ -432,8 +453,9 @@
                                                     <td>#1111</td>
                                                     <td>10/8/2018</td>
                                                     <td>Lương Xuân Trường</td>
+													<td>1.000.000 đ</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-sm btn-outline-success round" onclick="window.location.href='./order/detail.html'">Chưa Thanh Toán</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-success round" data-toggle="modal" data-target="#iconModal">Thanh Toán Ngay</button>
                                                     </td>
                                                 </tr>
 
@@ -441,8 +463,9 @@
                                                     <td>#1112</td>
                                                     <td>10/8/2018</td>
                                                     <td>Park Hang Seo</td>
+													<td>2.000.000 đ</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-sm btn-outline-success round" onclick="window.location.href='./order/detail.html'">Chưa Thanh Toán</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-success round" data-toggle="modal" data-target="#iconModal" >Thanh Toán Ngay</button>
                                                     </td>
                                                 </tr>
 
@@ -450,8 +473,9 @@
                                                     <td>#1113</td>
                                                     <td>10/8/2018</td>
                                                     <td>Nguyễn Công Phượng</td>
+													<td>3.000.000 đ</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-sm btn-outline-info round" onclick="window.location.href='./order/detail.html'">Đã Hoàn Thành</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-info round" data-toggle="modal" data-target="#iconModal">Thanh Toán Ngay</button>
                                                     </td>
                                                 </tr>
 
@@ -463,6 +487,39 @@
                             </div>
                         </div>
                     </div>
+					
+					 <!-- Modal -->
+                        <div class="modal fade text-left" id="iconModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel2"><i class="la la-road2"></i> Thu Hộ</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <h5><i class="la la-arrow-right"></i> Xác Minh Thông Tin</h5>
+                                  <p>Bạn chắc chắn muốn thu hộ đơn hàng #1111 với tổng giá trị là 1.000.000 đ ?</p>
+                                  
+                                  <hr>
+                                  <h5><i class="la la-lightbulb-o"></i> Chú Ý</h5>
+                                  <p>Updating ...
+                                  </p>
+								  
+								  <!--
+                                  <div class="alert alert-success" role="alert">
+                                    <span class="text-bold-600">Well done!</span> You successfully read this
+                                    important alert message.
+                                  </div> -->
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Hủy</button>
+                                  <button type="button" class="btn btn-outline-primary">Xác Nhận</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                 </section>
 
             </div>
@@ -490,6 +547,10 @@
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="../../../app-assets/js/scripts/tables/datatables/datatable-basic.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
+	
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="../../../app-assets/js/scripts/modal/components-modal.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL JS-->
 </body>
 
 </html>
